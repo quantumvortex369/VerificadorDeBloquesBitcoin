@@ -1,6 +1,6 @@
 import requests
 from datetime import datetime
-from config import API_URL
+from src.config import API_URL
 
 class BlockVerifier:
     """
@@ -81,15 +81,15 @@ class BlockVerifier:
             if valid:
                 print("\n✅ Bloque válido")
             else:
-                print("\n❌ Bloque inválido")
+                print("\nBloque inválido")
                 print("\nProblemas encontrados:")
                 for issue in issues:
                     print(f"- {issue}")
 
         except requests.exceptions.RequestException as e:
-            print(f"\n❌ Error al obtener el bloque: {e}")
+            print(f"\nError al obtener el bloque: {e}")
         except KeyError as e:
-            print(f"\n❌ Error en la estructura del bloque: {e}")
+            print(f"\nError en la estructura del bloque: {e}")
 
     def validate_transaction(self, tx_id):
         """
@@ -146,15 +146,15 @@ class BlockVerifier:
             if valid:
                 print("\n✅ Transacción válida")
             else:
-                print("\n❌ Transacción inválida")
+                print("\nTransacción inválida")
                 print("\nProblemas encontrados:")
                 for issue in issues:
                     print(f"- {issue}")
 
         except requests.exceptions.RequestException as e:
-            print(f"\n❌ Error al obtener la transacción: {e}")
+            print(f"\nError al obtener la transacción: {e}")
         except KeyError as e:
-            print(f"\n❌ Error en la estructura de la transacción: {e}")
+            print(f"\nError en la estructura de la transacción: {e}")
 
 def main():
     """Función principal que maneja la interfaz de usuario"""
@@ -211,7 +211,7 @@ Las validaciones incluyen:
             break
         
         else:
-            print("\n❌ Opción no válida. Por favor, seleccione una opción del 1 al 3.")
+            print("\nOpción no válida. Por favor, seleccione una opción del 1 al 3.")
 
 if __name__ == "__main__":
     main()
