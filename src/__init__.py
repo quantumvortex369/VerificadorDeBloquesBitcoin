@@ -1,8 +1,8 @@
 """
-Módulo de utilidades para el Verificador de Bloques Bitcoin.
+Paquete principal del Verificador de Bloques Bitcoin.
 
-Este paquete contiene funciones de utilidad que pueden ser utilizadas
-por diferentes partes de la aplicación.
+Este paquete contiene los módulos necesarios para verificar bloques
+y transacciones de la red Bitcoin.
 """
 
-__all__ = []  # Lista de módulos disponibles para importación
+__version__ = '1.0.0'
