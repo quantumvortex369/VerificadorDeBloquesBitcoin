@@ -31,7 +31,12 @@ pip install -r requirements.txt
 
 ## Uso
 
+
 Inicia el programa desde la línea de comandos:
+=======
+
+Ejecutar el script:
+main
 
 ```bash
 python3 main.py
