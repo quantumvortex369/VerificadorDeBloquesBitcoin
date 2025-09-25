@@ -26,6 +26,7 @@ pip install requests
 ## Uso
 
 Ejecutar el script:
+
 ```bash
 python verificador.py
 ```
